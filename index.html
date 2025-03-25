@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gira el Dado - ¡Lanza y Guarda tu Historial!</title>
+    <meta
+      name="description"
+      content="Lanza un dado virtual y guarda tu historial de tiradas. ¡Perfecto para juegos de mesa y decisiones aleatorias. Cambia entre modo claro y oscuro."
+    />
+    <meta
+      name="keywords"
+      content="dado virtual, lanzar dado, historial de tiradas, juego de dados, azar, aleatorio, modo claro, modo oscuro, juego web"
+    />
+    <meta name="author" content="Daniel Baena" />
+
+    <meta
+      property="og:title"
+      content="Gira el Dado - ¡Lanza y Guarda tu Historial!"
+    />
+    <meta
+      property="og:description"
+      content="Lanza un dado virtual y guarda tu historial de tiradas. ¡Perfecto para juegos de mesa y decisiones aleatorias. Cambia entre modo claro y oscuro."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+  <body>
+    <div class="main-left">
+      <div class="main-nav">
+        <i
+          class="ri-sun-fill toggle-mode"
+          id="toggle-mode"
+          onclick="ChangeMode()"
+        ></i>
+        <i class="ri-delete-bin-6-fill" id="delete"></i>
+      </div>
+      <div class="main-history">
+        <div class="history">
+          <p>Tiro 1</p>
+          <i class="ri-dice-fill"></i>
+        </div>
+        <div class="history">
+          <p>Tiro 2</p>
+          <i class="ri-dice-fill"></i>
+        </div>
+        <div class="history">
+          <p>Tiro 3</p>
+          <i class="ri-dice-fill"></i>
+        </div>
+      </div>
+    </div>
+    <div class="main-right">
+      <h1 class="title">Juego del Dado</h1>
+      <h2 class="subtitle">
+        <i class="ri-information-fill"></i> Pulsa sobre el dado para girar
+      </h2>
+      <div class="dice"><i class="ri-dice-line"></i></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
